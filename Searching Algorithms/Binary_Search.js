@@ -9,6 +9,7 @@ function binarySearch(arr , target) {
         if(arr[mid] === target) return mid;
         arr[mid] < target ? left = mid + 1 : right = mid - 1;
     }
+    return -1;
 }
 
 const arr = [11, 12, 22, 25, 34, 64, 90];
